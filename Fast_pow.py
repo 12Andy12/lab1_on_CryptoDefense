@@ -42,7 +42,7 @@ def mega_pow(x, n, y):
 
 def test(x, n, mod):
     print("mega_pow({0}, {1}, {2}) = {3}".format(x, n, mod, mega_pow(x, n, mod)))
-    print("{0} ** {1} % {2} = {3}".format(x, n, mod, (x ** n) % mod))
+    print("{0} ** {1} % {2} = {3}".format(x, n, mod, pow(x, n, mod)))
 
 
 def test1():
@@ -54,4 +54,4 @@ def test1():
 
     n = randint(0, 10 ** 9)
     print("mega_pow({0}, {1}, {2}) = {3}".format(x, n, mod, mega_pow(x, n, mod)))
-    print("{0} ** {1} % {2} = {3}".format(x, n, mod, (x ** n) % mod))
+    print("{0} ** {1} % {2} = {3}".format(x, n, mod, pow(x, n, mod)))
