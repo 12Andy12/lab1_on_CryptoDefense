@@ -1,9 +1,11 @@
 import Fast_pow
 import Evcklid
 import Diffie_Hellman_protocol
+import steps
+
 
 Fast_pow.test(5, 20, 7)
-# Fast_pow.test1()
+Fast_pow.test1()
 
 
 a = 28
@@ -24,7 +26,10 @@ print("Ivan:\nPrivae_key = {0}\nPublic_key = {1}\nCommon_key = {2}".format(hex(I
                                                                            hex(Ivan.get_my_public_key()),
                                                                            hex(Ivan.get_my_common_key())))
 
-mes = Ivan.decrypt_message("Геперцензурное выражение")
+mes = Ivan.decrypt_message("Гиперцензурное выражение")
 
 print("Ivan send mesage '{0}'".format(mes))
 print("Oleg read mesage '{0}'".format(Oleg.encrypt_message(mes)))
+
+
+steps.start()
